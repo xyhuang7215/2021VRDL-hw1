@@ -62,6 +62,8 @@ def main():
     config = CONFIGS["ViT-B_16"]
     net = VisionTransformer(config, 384, zero_head=True, num_classes=200, smoothing_value=0)
     net = net.to(dev)
+    # uncomment this line if you want to use pretrain model
+    # net.load_from(np.load(./ViT-B_16.npz))
 
     optimizer = optim.SGD(net.parameters(), lr=1e-3, momentum=0.9, weight_decay=5*1e-4)
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=50)
