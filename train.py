@@ -84,9 +84,6 @@ def main():
         scheduler.step()
         print(epoch+1, total_loss)
 
-    checkpoint = torch.load('./drive/MyDrive/hw1/1027/hw1_transFG')
-    net.load_state_dict(checkpoint['model_state_dict'])
-
     torch.save(net.state_dict(), './hw1_transFG')
 
 if __name__ == '__main__':

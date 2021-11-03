@@ -17,7 +17,7 @@ python train.py
 Modify image and txt path before evaluating.
 
 ```eval
-python eval.py
+python inference.py
 ```
 
 ## Pre-trained Models
@@ -35,3 +35,5 @@ You can download pretrained models here:
 
 
 ## Reference
+
+- [TransFG](https://github.com/TACJu/TransFG)
