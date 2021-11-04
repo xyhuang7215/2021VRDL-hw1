@@ -86,7 +86,7 @@ def main():
         scheduler.step()
         print(epoch+1, total_loss)
 
-    torch.save(net.state_dict(), './hw1_transFG')
-
+    torch.save({'model_state_dict': net.state_dict()}, './hw1_transFG')
+    
 if __name__ == '__main__':
     main()
