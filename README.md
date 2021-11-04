@@ -26,6 +26,8 @@ You can download pretrained models here:
 
 - [My model](https://drive.google.com/file/d/1zmsVHVXMPw55GJ0isHYgzDus0-ESj9cR/view?usp=sharing)
 
+put the model with inference.py
+
 ## Results
 
 
