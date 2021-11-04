@@ -53,7 +53,7 @@ def main():
 
     config = CONFIGS["ViT-B_16"]
     net = VisionTransformer(config, 384, zero_head=True, num_classes=200, smoothing_value=0)
-    net.load_state_dict(torch.load('./hw1_transFG'))
+    net.load_state_dict(torch.load('./hw1_transFG')['model_state_dict'])
     net = net.to(dev)
     net.eval()
 
